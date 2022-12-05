@@ -1,47 +1,26 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.summary }}</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>Wireshark is a popular open source application for analyzing network protocols in much greater depth than you can achieve through, for example, the Network portion of browser developer tools. This can be very valuable for diagnosing problems with internet applications such as the Brightcove Player or apps that interact with Brightcove through our APIs.</p>
-    <p>Even if your own knowledge of networks is not deep enough to fully understand the information you obtain from Wireshark, capturing the information can be of great help to Brightcove Support in diagnosing issues, and our Support representatives may ask if it is possible for you to capture network data from Wireshark so that they can better help you.</p>
-    <p>The steps below will walk you through the basic installation and use of Wireshark.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="installation">Installation</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{ page.summary }}</summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>Wiresharkは、例えば、ブラウザ開発者ツールのネットワーク部分を通じて達成できるよりもはるかに深いネットワークプロトコルを分析するための一般的なオープンソースアプリケーションです。これは、Brightcoveプレーヤーなどのインターネットアプリケーション、または API を通じてBrightcoveとやり取りするアプリケーションの問題を診断する際に非常に役立ちます。</p>
+    <p>ネットワークに関する知識が Wireshark から取得した情報を十分に理解できるほど深くない場合でも、Brightcoveのサポートは問題を診断する際に大きな助けとなる可能性があります。また、サポート担当者が Wireshark からネットワークデータをキャプチャできるかどうか尋ねる場合があります。彼らはより良いあなたを助けることができるようにWiresharkを。</p>
+    <p>以下の手順では、Wireshark の基本的なインストールと使用について説明します。</p>  </section><section class="bcls-section">
+    <h2 id="installation">インストール</h2>
     <ol class="bcls-tasklist">
-      <li>If you do not already have Wireshark installed, go to <a href="https://www.wireshark.org/#download">https://www.wireshark.org/#download</a> and download the installer that matches your platform.</li>
-      <li>Run the installer. If you are presented with any options, install all available components. (Options vary by release and platform.)</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="using_wireshark">Using Wireshark</h2>
-    <p><strong>Important:</strong> before beginning, it would be best to shut down as many applications that access the internet as possible (for example: email clients, IM or social media apps, Dropbox, Evernote, and other cloud-based storage apps). This will help minimize the "noise" of network transfers that are unrelated to the issue you are trying to diagnose.</p>
+      <li>Wireshark をまだインストールしていない場合は、<a href="https://www.wireshark.org/#download"> https://www.wireshark.org/#download</a>プラットフォームに一致するインストーラーをダウンロードします。</li>
+      <li>インストーラを実行します。オプションが表示された場合は、使用可能なすべてのコンポーネントをインストールします。(オプションはリリースとプラットフォームによって異なります)。</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="using_wireshark">Wiresharkを使う</h2>
+    <p><strong>重要：</strong>開始する前に、インターネットにアクセスするできるだけ多くのアプリケーションをシャットダウンすることをお勧めします (たとえば、メール クライアント、IM またはソーシャル メディア アプリ、Dropbox、Evernote、およびその他のクラウドベースのストレージ アプリ)。これにより、診断しようとしている問題とは無関係なネットワーク転送のノイズを最小限に抑えることができます。</p>
     <ol class="bcls-tasklist">
-      <li>Launch Wireshark.</li>
-      <li>Select a capture filter - the one you want will probably be showing most or at least a good portion of the traffic:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Data Capture Filters" src="/assets/images/developer/wireshark-capture-filters.png" />
-          <figcaption class="bcls-caption--image">Data Capture Filters</figcaption>
-        </figure>
+      <li>Wiresharkを起動します。</li>
+      <li>キャプチャフィルタを選択します。必要なフィルタは、おそらくトラフィックの大部分または少なくともかなりの部分を表示します。 <figure class="bcls-figure"><img class="bcls-image" alt="データキャプチャフィルタ" src="/assets/images/developer/wireshark-capture-filters.png" /> <figcaption class="bcls-caption--image">データキャプチャフィルタ</figcaption> </figure>
       </li>
-      <li>Double-click on the filter you want to start capturing data:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Capturing Data" src="/assets/images/developer/wireshark-capturing-data.png" />
-          <figcaption class="bcls-caption--image">Capturing Data</figcaption>
-        </figure>
+      <li>データのキャプチャを開始するフィルタをダブルクリックします。 <figure class="bcls-figure"><img class="bcls-image" alt="データのキャプチャ" src="/assets/images/developer/wireshark-capturing-data.png" /> <figcaption class="bcls-caption--image">データのキャプチャ</figcaption> </figure>
       </li>
-      <li>With data capture running, recreate the problem you are trying to diagnose by loading the player, running the app, or whatever it is.</li>
-      <li>Once you have completed reproducing the problem, click the Stop Capturing Data button in Wireshark:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Stop Capturing Data" src="/assets/images/developer/wireshark-stop-data capture.png" />
-          <figcaption class="bcls-caption--image">Stop Capturing Data</figcaption>
-        </figure>
+      <li>データキャプチャの実行中に、プレーヤーのロード、アプリの実行、またはそれが何であれ、診断しようとしている問題を再現します。</li>
+      <li>問題の再現が完了したら、Wiresharkでデータのキャプチャを停止ボタンをクリックします。 <figure class="bcls-figure"><img class="bcls-image" alt="データのキャプチャを停止する" src="/assets/images/developer/wireshark-stop-data capture.png" /> <figcaption class="bcls-caption--image">データのキャプチャを停止する</figcaption> </figure>
       </li>
-      <li>Now, export the data from Wireshark by clicking the Save Capture File button:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Save Capture File" src="/assets/images/developer/wireshark-save-capture-file.png" />
-          <figcaption class="bcls-caption--image">Save Capture File</figcaption>
-        </figure>
+      <li>ここで、キャプチャファイルを保存ボタンをクリックして Wireshark からデータをエクスポートします。 <figure class="bcls-figure"><img class="bcls-image" alt="キャプチャファイルを保存" src="/assets/images/developer/wireshark-save-capture-file.png" /> <figcaption class="bcls-caption--image">キャプチャファイルを保存</figcaption> </figure>
       </li>
-      <li>Save the file in the default format on your machine.</li>
-      <li>Deliver the file to Brightcove Support in a support request that details the issue you are having.</li>
-    </ol>
-  </section>
-</article>
+      <li>ファイルをデフォルトの形式でコンピュータに保存します。</li>
+      <li>サポートリクエストで、発生している問題の詳細が記載されたファイルを Brightcove サポートに配信します。</li>
+    </ol>   </section></article>

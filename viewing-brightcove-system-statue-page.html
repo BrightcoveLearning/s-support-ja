@@ -1,75 +1,55 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="6052551601001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-    <p>Brightcove continuously monitors the status of all Brightcove Services and applications. If there are any interruptions in service, a note will be posted on the System Status Page. All scheduled maintenance notices will also be posted on this page.</p>
-    <p>To access the System Status Page, visit <a href="https://status.brightcove.com">https://status.brightcove.com</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status.png" /></figure>
-    <p>All posted notifications will include the following information:</p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="6052551601001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>Brightcoveは、すべての Brightcove サービスとアプリケーションのステータスを継続的に監視します。サービスに何らかの中断があると、システムステータスページに表示されます。本ページには、予定されているメンテナンス通知もすべて掲載されます。</p>
+    <p>システム ステータス ページにアクセスするには、<a href="https://status.brightcove.com"> https://status.brightcove.com</a> .</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status.png" /></figure>
+    <p>投稿されたすべての通知には、以下の情報が含まれます。</p>
     <ul>
-      <li>Incident Status
+      <li>インシデントステータス
         <ul>
-          <li>Operational (Green)</li>
-          <li>Notification (Blue - systems are currently in operation but affected by delays or intermittent outages)</li>
-          <li>Partial Service Disruption (Yellow)</li>
-          <li>Full Service Disruption (Red)</li>
-          <aside class="bcls-aside bcls-aside--information">Note: Brightcove does not send notifications to the subscribers when the System Status is changed to Blue. Notifications are sent when the status is in Yellow or Red.</aside>
+          <li>運用可能 (緑)</li>
+          <li>通知 (青-システムは現在動作中ですが、遅延または断続的な停止の影響を受ける)</li>
+          <li>部分的なサービス中断 (黄色)</li>
+          <li>フルサービスの中断 (赤)</li> <aside class="bcls-aside bcls-aside--information">注:[システムステータス（SystemStatus）]が[ブルー（Blue）]に変更されても、Brightcoveはユーザに通知を送信しません。ステータスがYellowまたはRedの場合、通知が送信されます。</aside>
         </ul>
       </li>
-      <li>Components - Service or area affected</li>
-      <li>Locations
+      <li>コンポーネント － 影響を受けるサービスまたは領域</li>
+      <li>場所
         <ul>
-          <li>APAC</li>
-          <li>Americas</li>
-          <li>EMEA</li>
-          <li>Japan</li>
+          <li>アジア・太平洋</li>
+          <li>アメリカ</li>
+          <li>エメア</li>
+          <li>日本</li>
         </ul>
       </li>
-      <li>Current State and status. States include:
+      <li>現在の状態とステータス。状態には以下があります。
         <ul>
-          <li>Investigating - Engineers are looking into the issue</li>
-          <li>Identified - Engineers have identified the issue and are looking to correct</li>
-          <li>Monitoring - Issue resolved and Engineering monitoring to ensure all is healthy</li>
-          <li>Resolved - Issue resolved</li>
+          <li>調査中-エンジニアが問題を調査中</li>
+          <li>特定-エンジニアが問題を特定し、修正を検討している</li>
+          <li>モニタリング-問題の解決とエンジニアリング監視により、すべてが正常であることを確認する</li>
+          <li>解決済み-問題が解決しました</li>
         </ul>
       </li>
     </ul>
-    <p>All posted messages will be in English and the time used is Eastern Standard Time (GMT-5).</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="history">Viewing the system status history</h2>
-    <p>To view the System Status history, click the <strong>History</strong> link at the bottom of the page.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-history.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="subscribe">Subscribing to system status changes</h2>
-    <p>You can sign up to be notified when the system status changes. This section is organized as follows:</p>
+    <p>投稿されたメッセージはすべて英語で、使用時間は東部標準時 (GMT-5) です。</p>  </section><section class="bcls-section">
+    <h2 id="history">システム状態の履歴を表示する</h2>
+    <p>システム ステータスの履歴を表示するには、<strong>歴史</strong>ページ下部のリンク。</p>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-history.png" /></figure></section><section class="bcls-section">
+    <h2 id="subscribe">システム状態の変更を購読する</h2>
+    <p>サインアップして、システムステータスが変更されたときに通知を受け取ることができます。このセクションの構成は次のとおりです。</p>
     <ul>
-      <li><a href="#email">Subscribing to email</a></li>
-      <li><a href="#webhook">Subscribing to webhook</a></li>
-      <li><a href="#manage">Managing your subscription</a></li>
+      <li><a href="#email">メールを購読中</a></li>
+      <li><a href="#webhook">webhookを購読中</a></li>
+      <li><a href="#manage">サブスクリプションの管理</a></li>
     </ul>
-    <h3 id="email">Subscribing to email</h3>
-    <p>To receive notifications by email, click the <strong>SUBSCRIBE</strong> button, enter your email address and then click <strong>Subscribe</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-subscribe.png" /></figure>
-    <p>After clicking <strong>Subscript</strong>, you will get the below message prompting them to check your email:</p>
-    <figure class="bcls-figure"> <img class="bcls-image--no-border" src="/assets/images/s-support-img/thanks-for-subscibing.png" alt="Check Your Email">
-      <figcaption class="bcls-caption--image">Check Your Email</figcaption>
-    </figure>
-    <p>The email comes from <strong>no-reply@brightcove.com</strong> and has “Status Subscription” for subject. If you don’t see it, please check your spam folder and/or review with your IT team in case it is being filtered.</p>
-    <h3 id="webhook">Subscribing to webhook</h3>
-    <p>A webhook is a defined callback made with HTTP POST. You specify a URL where the callback will post a JSON object when there is a status update.</p>
-    <p>To sign up to be notified when the system status changes, select the <strong>SUBSCRIBE</strong> button. Then enter a URL to receive the JSON payload along with your email address.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="webhook subscribe" src="/assets/images/s-support-img/system-status-webhook-subscribe.png" /></figure>
-    <p>When system status changes are sent, your webhook address should receive a JSON object similar to this:</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="webhook json" src="/assets/images/s-support-img/system-status-webhook-json.png" /></figure>
-    <h3 id="manage">Managing your subscription</h3>
-    <p>After you have subscribed, you will receive an email with a link to a Manage Subscription page that allows you to manage your subscription. You can choose the components/products/regions you are interested in receiving notifications for. Make your selections and then click <strong>Save Subscription</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-manage-sub.png" /></figure>
-    <p>To unsubscribe, click the <strong>Unsubscribe</strong> link at the bottom of the Manage Subscription page.</p>
-    <h3>Getting notifications in Slack</h3>
-    <p>Slack has its own webhook system that can be used to connect status updates. Consult the <a href="https://api.slack.com/messaging/webhooks">Slack documentation for details.</a></p>
-  </section>
-</article>
+    <h3 id="email">メールを購読中</h3>
+    <p>電子メールで通知を受け取るには、<strong>申し込む</strong>ボタンにメールアドレスを入力してクリック<strong>申し込む</strong>.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-subscribe.png" /></figure>
+    <p>クリック後<strong>添字</strong>、あなたの電子メールを確認するように促す以下のメッセージが表示されます。</p> <figure class="bcls-figure"> <img class="bcls-image--no-border" src="/assets/images/s-support-img/thanks-for-subscibing.png" alt="Eメールの確認"> <figcaption class="bcls-caption--image">Eメールの確認</figcaption> </figure>
+    <p>メールはこちらから<strong>no-reply@brightcove.com</strong>件名にステータス サブスクリプションがあります。™表示されない場合は、スパムフォルダを確認するか、ITチームに確認してフィルタリングが行われているかどうかを確認してください。</p>
+    <h3 id="webhook">webhookを購読中</h3>
+    <p>ウェブフックは、HTTP POSTで作成された定義されたコールバックです。ステータスの更新がある場合に、コールバックが JSON オブジェクトをポストする URL を指定します。</p>
+    <p>システム ステータスが変更されたときに通知を受けるようにサインアップするには、<strong>申し込む</strong>ボタン。次に、電子メールアドレスとともに JSON ペイロードを受信する URL を入力します。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="webhook 購読する" src="/assets/images/s-support-img/system-status-webhook-subscribe.png" /></figure>
+    <p>システムステータスの変更が送信されると、Webhook アドレスは次のような JSON オブジェクトを受け取ります。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="webhook json" src="/assets/images/s-support-img/system-status-webhook-json.png" /></figure>
+    <h3 id="manage">サブスクリプションの管理</h3>
+    <p>登録すると、購読の管理ページへのリンクを記載した電子メールが送られてきます。このページで、お客様の購読について管理できます。通知の受信を希望するコンポーネント/製品/リージョンを選択できます。選択を行ってから、<strong>サブスクリプションを保存</strong>.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-support-img/system-status-manage-sub.png" /></figure>
+    <p>購読を解除するには、<strong>登録解除</strong>サブスクリプションの管理ページの下部にあるリンク。</p>
+    <h3>Slackで通知を受け取る</h3>
+    <p>Slackには、ステータスの更新を接続するために使用できる独自のWebhookシステムがあります。相談する<a href="https://api.slack.com/messaging/webhooks">詳細については、Slack のドキュメントを参照してください。</a></p>   </section></article>

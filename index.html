@@ -8,17 +8,11 @@
     min-width: 100%;
   }
 </style>
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="card-wrapper">
-    <section class="bcls-card">
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="card-wrapper"> <section class="bcls-card">
       <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics in this section</h2>
+        <h2 id="Topics_in_this_section">このセクションのトピック</h2>
         <ul>
-          {% for item in site.data.navigation %}
-          {% if item.name == page.title %}
-          {% for entry in item.docs %}
+          {% for item in site.data.navigation %} {% if item.name == page.title %} {% for entry in item.docs %}
           <li><a href="{{ entry.url }}">{{ entry.name }}</a> {% if entry.docs %}
             <ul>
               {% for subentry in entry.docs %}
@@ -26,11 +20,6 @@
               {% endfor %}
             </ul>
             {% endif %} </li>
-          {% endfor %}
-          {% endif %}
-          {% endfor %}
+          {% endfor %} {% endif %} {% endfor %}
         </ul>
-      </div>
-    </section>
-  </section>
-</article>
+      </div>    </section></section></article>
